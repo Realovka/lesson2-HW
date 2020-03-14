@@ -1,5 +1,5 @@
 package com.company;
-
+import java.lang.String;
 public class Main {
 
     public static void main(String[] args) {
@@ -25,6 +25,14 @@ public class Main {
                 customer3.city = "Минск";
                 customer3.street = "Жудро";
                 customer3.house = 1;
+                customer1.getFullName();
+                customer1.getFullAddress();
+                customer2.getFullName();
+                customer2.getFullAddress();
+                customer3.getFullName();
+                customer3.getFullAddress();
+
+
 
             }
         }
@@ -37,10 +45,10 @@ public class Main {
             int house;
 
             void  getFullName() {
-                System.out.println("Имя и фамилия заказчика: " + firstName + " " + lastName);
+                System.out.print("Имя и фамилия заказчика: " + firstName + " " + lastName+", ");
             }
             void getFullAddress(){
-                System.out.println("Адрес заказчика:"+city+", "+street+", "+house);
+                System.out.println("адрес заказчика: "+city+", "+street+", "+house);
             }
         }
 
